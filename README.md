@@ -1,54 +1,73 @@
-# IPL-Data-Analysis
-# 🏏 IPL Data Preprocessing and Analysis Project
+# Review 2: Data Visualization & Interpretation
 
-This project focuses on preprocessing and analyzing data from IPL (Indian Premier League) cricket matches using Python and popular data analysis libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly.
+## 📊 Objective
 
-## 📌 Project Objectives
+The goal of Review 2 is to create meaningful, well-structured, and visually engaging data visualizations that help interpret key insights from IPL match and ball-by-ball data. This builds on the cleaned and engineered dataset from Review 1.
 
-- Ensure data integrity and consistency between the `matches.csv` and `deliveries.csv` datasets.
-- Perform detailed data cleaning, handling missing values, and standardizing categorical entries.
-- Engineer meaningful features such as match year and total match runs to enrich analysis.
-- Generate summary statistics and initial insights including top scorers, wicket-takers, and team performances.
-- Detect outliers in delivery data using statistical methods.
-- Visualize patterns and trends in the IPL datasets using various plots.
+---
 
-## ✅ Completed Tasks
-
-### 1. Data Preprocessing
-- Checked for and handled missing values.
-- Cleaned and standardized team names.
-- Merged datasets for deeper insights.
-- Converted date columns to proper datetime objects.
-- Created new feature columns such as `match_year` and `total_runs_in_match`.
-
-### 2. Summary Statistics
-- Count of total matches and runs.
-- Top 5 run scorers and wicket takers.
-- Team-wise run contributions.
-- Average runs scored per over.
-
-### 3. Data Transformation
-- Used IQR method to detect outlier deliveries.
-- Ensured consistency across merged data columns.
-
-### 4. Visual Analysis
-- Bar plots for top scorers, wicket takers, and team totals.
-- Line plot for average runs per over.
-
-## 📦 Technologies Used
+## 🛠️ Tools & Libraries Used
 
 - **Python**
-- **Pandas**, **NumPy**
-- **Matplotlib**, **Seaborn**, **Plotly**
+- **Pandas** – Data manipulation and preparation
+- **Matplotlib & Seaborn** – Static data visualizations
+- **Plotly Express** – Interactive charts
+- **NumPy** – Numerical operations
 
-## 📁 Dataset Files
+---
 
-- `matches.csv`
-- `deliveries.csv`
+## 📁 Files Included
 
-## 📈 Output
+- `review2_visuals.py`: The main Python script for data visualizations and insights.
+- `deliveries.csv` and `matches.csv`: Datasets used.
+- `README.md`: This file.
 
-Initial insights and visuals that demonstrate the understanding and quality of IPL data, forming the foundation for further statistical modeling or machine learning.
+---
 
+## 📈 Visualizations & Insights
 
+The following charts and statistics were created to meet the evaluation criteria:
 
+1. **Top 5 Run Scorers (Bar Plot)**  
+   Clear comparison of highest run-getters in the dataset.
+
+2. **Top 5 Wicket Takers (Bar Plot)**  
+   Highlights key bowlers with the most dismissals.
+
+3. **Average Runs Per Over (Line Plot)**  
+   Identifies scoring patterns across different overs.
+
+4. **Team-Wise Total Runs (Bar Plot)**  
+   Summarizes batting performance by team.
+
+5. **Outlier Detection (IQR Method)**  
+   Shows distribution anomalies in runs scored per delivery.
+
+Each visualization includes:
+- **Proper Labels**
+- **Color Schemes for Clarity**
+- **Legends & Titles**
+- **Interactive Features** (using Plotly for deeper exploration)
+
+---
+
+## 🧠 Interpretation & Storytelling
+
+- Batsmen and bowlers' performances are benchmarked to reveal standout players.
+- The average run rate per over gives insights into powerplays and death overs.
+- Team comparisons help identify consistently high-scoring teams.
+- Outliers highlight exceptional or unusual deliveries.
+
+Narratives are embedded within the visual flow, guiding the viewer from raw data to meaningful insight.
+
+---
+
+## ▶️ How to Run This Project
+
+1. Clone the GitHub repository.
+2. Open the `review2/` folder in **VS Code**.
+3. Run `review2_visuals.py` using Python 3 (recommend using a virtual environment).
+4. Ensure the datasets (`matches.csv`, `deliveries.csv`) are in the same directory.
+
+```bash
+python review2_visuals.py
